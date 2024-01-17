@@ -1,15 +1,8 @@
-# Dictionary of known drinks and their alcohol content in grams per milliliter
-
-"""drinks = {
-    "beer": 0.05,
-    "wine": 0.12,
-    "vodka": 0.4,
-    # Add more drinks and their alcohol content here
-}"""
-
-#def calculate_blood_alcohol_level(drink, weight, volume):
-
-
+import sys
+import os
+from colorama import Fore
+os.system('cls')
+print(Fore.GREEN)
 class BloodAlcoholCalculator:
     def __init__(self):
         self.drink_types = {
@@ -45,10 +38,19 @@ class BloodAlcoholCalculator:
             return "Dangerously intoxicated"
 
 
-# Example usage
-weight = float(input("Введите ваш вес в килограммах: "))
-drink = input("Введите название напитка: ")
-volume = float(input("Введите объем напитка в миллилитрах: "))
-
-blood_alcohol_level = calculate_blood_alcohol_level(drink, weight, volume)
-print(f"Blood alcohol level: {blood_alcohol_level:.2f}")
+def main():
+    calculator = BloodAlcoholCalculator()
+    print("Welcome to AlcoPy, the alcohol calculator!")
+    print("Please enter your weight in kilograms: ")
+    body_weight = float(input())
+    print("Please choose one of the following drinks: ")
+    for key, value in calculator.drink_types.items():
+        print(f"{key}. {value['name']}")
+    drink_number = int(input())
+    print("Please enter the number of drinks you had in ml: ")
+    drink_quantity = int(input())
+    blood_alcohol_level = calculator.calculate_blood_alcohol_level(drink_number, body_weight, drink_quantity)
+    intoxication_level = calculator.get_intoxication_level(blood_alcohol_level)
+    print(f"Your blood alcohol level is {blood_alcohol_level}")
+    print(f"You are {intoxication_level}")
+main()
