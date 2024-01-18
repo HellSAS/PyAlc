@@ -3,6 +3,36 @@ import os
 def cls():
     os.system('cls')
     
+
+def tryParseString(string):
+    try:
+        return str(string)
+    except ValueError:
+        return False
+    
+def tps(string):
+    return tryParseString(string)
+    
+
+def tryParseInt(string):
+    try:
+        return int(string)
+    except ValueError:
+        return False
+    
+def tpi(string):
+    return tryParseInt(string)
+    
+    
+def tryParseFloat(string):
+    try:
+        return float(string)
+    except ValueError:
+        return False
+    
+def tpf(string):
+    return tryParseFloat(string)
+    
     
     
 def check_for_numbers(number):

@@ -3,6 +3,9 @@ from FunctionsBase import *
 import os 
 
 """
+tpi = tryParseInt
+tpf = tryParseFloat
+
 cfn = check_for_numbers
 cfs = check_for_string
 cfb = check_for_bool
@@ -28,16 +31,18 @@ class Drinker:
     attributeList = ["weight", "height", "gender", "age", "fullness"]
     
     def __init__(self, weight=65, height=175, gender="male", age=18, fullness=True):
-        weight = float(weight)
-        height = float(height)
-        age = int(age)
-        fullness = True if fullness.lower() == 'true' else False
+        weight = float(weight) if tpf(weight) and cfn(float(weight)) else 65
+        gender = gender.lower() if cfcs(['male','female'], gender) else "male"
+        height = float(height) if tpf(height) and cfn(float(height)) else 175
+        age = int(age) if tpi(age) and cfn(int(age)) else 18
+        if type(fullness) is not bool:
+            fullness = True if tps(fullness) and fullness.lower() == 'true' else False
         
-        self.weight = weight if cfn(weight) else 65
-        self.height = height if cfn(height) else 175
-        self.gender = gender.lower() if cfcs(['male','female'], gender) else "male"
-        self.age = age if cfn(age) else 18
-        self.fullness = fullness if cfb(fullness) else True
+        self.weight = weight
+        self.height = height 
+        self.gender = gender
+        self.age = age 
+        self.fullness = fullness 
         
     def __str__(self) -> str:
         string = ""

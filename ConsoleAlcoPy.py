@@ -12,4 +12,3 @@ User = Drinker(**UserDict)
 
 print("\n" + str(User))
 
-print(AlcoCalc.сalculate_alcohol_by_volume(40, 100))
