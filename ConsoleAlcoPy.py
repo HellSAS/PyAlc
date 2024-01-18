@@ -37,5 +37,9 @@ amount = int(input("Enter drink amount: "))
 c = AlcoCalc.сalculate_alcohol_by_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)
 result = AlcoCalc.сalculate_alcohol_effect(c)
 for i in result:
-    print(f"{i}: {result[i]}")
+    if i == "intoxication_level":
+        print(f"{i}: {result[i][1]}")
+        print(f"{i}_description: {result[i][2]}")
+    else:
+        print(f"{i}: {result[i]}")
 
