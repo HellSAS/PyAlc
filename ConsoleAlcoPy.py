@@ -1,10 +1,15 @@
-import AlcoClalc
+from AlcoCalc import AlcoCalc, Drinker
 
 UserDict = {}
 
-for a in AlcoClalc.Drinker.attributeList:
-    UserDict[a] = input(f"Enter {a}: ")
+UserDict = {a: None for a in Drinker.attributeList}
     
-User = AlcoClalc.Drinker(*UserDict)
+print(UserDict)
+for a in Drinker.attributeList:
+    UserDict[a] = input(f"Enter {a}: ")
+
+User = Drinker(**UserDict)
 
 print("\n" + str(User))
+
+print(AlcoCalc.сalculate_alcohol_by_volume(40, 100))

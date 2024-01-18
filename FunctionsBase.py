@@ -6,14 +6,15 @@ def cls():
     
     
 def check_for_numbers(number):
+    number = type(number)
     result = True if number is int or number is float else False
     return result
 
 def cfn(number):
     return check_for_numbers(number)
 
-
 def check_for_string(string):
+    string = type(string)
     result = True if string is str else False
     return result
 
@@ -22,6 +23,7 @@ def cfs(string):
 
 
 def check_for_bool(boolean):
+    boolean = type(boolean)
     result = True if boolean is bool else False
     return result
 
