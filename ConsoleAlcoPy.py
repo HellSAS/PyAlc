@@ -4,7 +4,6 @@ from FunctionsBase import *
 import os
 os.system('cls')
 print(Fore.GREEN)
-
 UserDict = {}
 
 UserDict = {a: None for a in Drinker.attributeList}
@@ -44,4 +43,3 @@ for i in result:
         print(f"{i}_description: {result[i][2]}")
     else:
         print(f"{i}: {result[i]}")
-

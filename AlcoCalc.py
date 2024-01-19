@@ -1,4 +1,5 @@
 from FunctionsBase import *
+from accessify import private, protected
 
 import os as _os
 
@@ -56,7 +57,7 @@ class AlcoCalc:
         23: {"name": "sambuca", "alcohol_content": 0.4},
         24: {"name": "samagon", "alcohol_content": 0.95},
     }
-
+    
     def calculate_alcohol_by_volume(drink_type, drink_amount, weight, height, gender, fullness) -> float: 
         """! Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови].
         @param drink_type   Тип напитка.
