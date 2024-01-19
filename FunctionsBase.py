@@ -1,7 +1,7 @@
-import os
+import os as _os
 
 def cls():
-    os.system('cls')
+    _os.system('cls')
     
 
 def tryParseString(string):

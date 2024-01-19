@@ -1,5 +1,6 @@
 from AlcoCalc import AlcoCalc, Drinker
 from colorama import Fore
+from FunctionsBase import *
 import os
 os.system('cls')
 print(Fore.GREEN)
@@ -34,8 +35,9 @@ amount = int(input("Enter drink amount: "))
 
 
 
-c = AlcoCalc.сalculate_alcohol_by_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)
-result = AlcoCalc.сalculate_alcohol_effect(c)
+c = AlcoCalc.calculate_alcohol_by_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)
+result = AlcoCalc.calculate_alcohol_effect(c)
+cls()
 for i in result:
     if i == "intoxication_level":
         print(f"{i}: {result[i][1]}")

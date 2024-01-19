@@ -1,6 +1,6 @@
 from FunctionsBase import *
 
-import os 
+import os as _os
 
 """
 tpi = tryParseInt
@@ -14,7 +14,12 @@ cfcs = check_for_custom_string
 """
     
 class AlcoCalc:
+    
+
+    ## Словарь с данными об уровнях опьянения.
     intoxication_levels = {
+        
+        
         "трезвый": [0.2, "трезвый", "Трезвый"], 
         "лёгкая степень опьянения": [0.59, "легкая степень опьянения", "\nПоведение:\n*Средневыраженная\n*эйфория\n*РасслаблениеОщущение\n*радости\n*Говорливость\n*Понижение\n*сдержанности\n" + "Нарушения:\n*Концентрация"],
         "средняя степень опьянения": [0.9, "средняя степень опьянения", "\nПоведение:\n*Притупление ощущения\n*Расторможенность\n*Экстравертность\n" + "Нарушения:\n*Рассуждение\n*Глубина восприятия\n*Периферическое зрение\n*Приспособление зрачка к свету"],
@@ -23,8 +28,9 @@ class AlcoCalc:
         "смертельное отравление": [5.0, "смертельное отравление", "\nПоведение:\n*Полная утрата контроля за поведением\n*Потеря сознания\n*Вероятность смерти\n" + "Нарушения:\n*Дыхание\n*Сердцебиение\n*Контроль над движением зрачков (Нистагм)"],
     }
 
-
+    ## Словарь с данными о типах напитков.
     drink_types = {
+        
         1: {"name": "beer", "alcohol_content": 0.05},
         2: {"name": "wine", "alcohol_content": 0.12},
         3: {"name": "whiskey", "alcohol_content": 0.4},
@@ -49,16 +55,22 @@ class AlcoCalc:
         22: {"name": "baileys", "alcohol_content": 0.17},
         23: {"name": "sambuca", "alcohol_content": 0.4},
         24: {"name": "samagon", "alcohol_content": 0.95},
+    }
 
-
-            }
-
-
-
-    def сalculate_alcohol_by_volume(drinktype, drink_amount, weight=65, height=175, gender="male", fullness=True) -> float: 
+    def calculate_alcohol_by_volume(drink_type, drink_amount, weight, height, gender, fullness) -> float: 
+        """! Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови].
+        @param drink_type   Тип напитка.
+        @param drink_amount   Количество выпитого напитка (в миллилитрах).
+        @param weight   Вес человека (в килограммах).
+        @param height   Рост человека (в сантиметрах).
+        @param gender   Пол человека.
+        @param fullness   Уровень сытости человека.
+        @return  [грамм.спирта/литр.крови].
+        """
+        
         k = 1 if fullness == False else 10/17
         bmi = weight/((height/100)**2)
-        a = drink_amount*AlcoCalc.drink_types[drinktype]["alcohol_content"]*0.789
+        a = drink_amount*AlcoCalc.drink_types[drink_type]["alcohol_content"]*0.789
         rm = 1.0181-0.0113*bmi
         rf = 0.9367-0.01240*bmi
         r = rm if gender == "male" else rf
@@ -66,7 +78,12 @@ class AlcoCalc:
         result = bac
         return result
 
-    def сalculate_alcohol_effect(c) -> dict:
+    def calculate_alcohol_effect(c) -> dict: 
+        """! Рассчитывает уровень опьянения.
+        @param c   Уровень алкоголя в крови [грамм.спирта/литр.крови].
+        @return  Словарь с данными об уровне опьянения.
+        """
+        
         can_drive = True
         
         if c > AlcoCalc.intoxication_levels["трезвый"][0]:
@@ -87,6 +104,14 @@ class Drinker:
     attributeList = ["weight", "height", "gender", "age", "fullness"]
     
     def __init__(self, weight=65, height=175, gender="male", age=18, fullness=True):
+        """! Конструктор класса Drinker.
+        @param weight   Вес человека (в килограммах).
+        @param height   Рост человека (в сантиметрах).
+        @param gender   Пол человека.
+        @param age   Возраст человека.
+        @param fullness   Уровень сытости человека.
+        """
+        
         weight = float(weight) if tpf(weight) and cfn(float(weight)) else 65
         gender = gender.lower() if cfcs(['male','female'], gender) else "male"
         height = float(height) if tpf(height) and cfn(float(height)) else 175
@@ -101,6 +126,10 @@ class Drinker:
         self.fullness = fullness 
         
     def __str__(self) -> str:
+        """! Возвращает строку с данными о человеке.
+        @return Строка с данными о человеке.
+        """
+        
         string = ""
         for a in self.__dict__:
             string += f"{a} = {self.__dict__[a]}\n"

@@ -1,0 +1,50 @@
+\doxysection{C\+:/\+Users/\+Ponom/\+One\+Drive/\+Desktop/\+Aclo\+Py/\+Console\+Alco\+Py.py}
+\hypertarget{_console_alco_py_8py_source}{}\label{_console_alco_py_8py_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00001}00001\ \textcolor{keyword}{from}\ AlcoCalc\ \textcolor{keyword}{import}\ AlcoCalc,\ Drinker}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00002}00002\ \textcolor{keyword}{from}\ colorama\ \textcolor{keyword}{import}\ Fore}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00003}00003\ \textcolor{keyword}{import}\ os}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00004}00004\ os.system(\textcolor{stringliteral}{'cls'})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00005}00005\ print(Fore.GREEN)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00007}00007\ UserDict\ =\ \{\}}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00009}00009\ UserDict\ =\ \{a:\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{for}\ a\ \textcolor{keywordflow}{in}\ Drinker.attributeList\}}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00011}00011\ print(UserDict)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00012}00012\ \textcolor{keywordflow}{for}\ a\ \textcolor{keywordflow}{in}\ Drinker.attributeList:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00013}00013\ \ \ \ \ UserDict[a]\ =\ input(f\textcolor{stringliteral}{"{}Enter\ \{a\}:\ "{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00014}00014\ User\ =\ Drinker(**UserDict)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00015}00015\ \textcolor{comment}{\#User\ =\ Drinker(60,\ 169,'male',\ 17,\ True)}}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00016}00016\ print(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ +\ str(User))}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00018}00018\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ AlcoCalc.drink\_types:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00019}00019\ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{AlcoCalc.drink\_types[i]['name']\}\ \{AlcoCalc.drink\_types[i]['alcohol\_content']\}\%"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00021}00021\ \textcolor{keyword}{def\ }askdrinktype():}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00022}00022\ \ \ \ \ check\ =\ int(input(\textcolor{stringliteral}{"{}Enter\ drink\ type:\ "{}}))}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{if}\ \ check\ \textcolor{keywordflow}{in}\ AlcoCalc.drink\_types:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{global}\ drinktype}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00025}00025\ \ \ \ \ \ \ \ \ drinktype\ =\ check}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00028}00028\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Wrong\ drink\ type"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00029}00029\ \ \ \ \ \ \ \ \ askdrinktype()}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00030}00030\ \textcolor{comment}{\#1919.5242}}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00031}00031\ askdrinktype()}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00032}00032\ amount\ =\ int(input(\textcolor{stringliteral}{"{}Enter\ drink\ amount:\ "{}}))}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00037}00037\ c\ =\ AlcoCalc.сalculate\_alcohol\_by\_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00038}00038\ result\ =\ AlcoCalc.сalculate\_alcohol\_effect(c)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00039}00039\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ result:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{if}\ i\ ==\ \textcolor{stringliteral}{"{}intoxication\_level"{}}:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00041}00041\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i][1]\}"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}\_description:\ \{result[i][2]\}"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00044}00044\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i]\}"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00045}00045\ }
+
+\end{DoxyCode}
