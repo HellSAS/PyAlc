@@ -1,12 +1,16 @@
 from AlcoCalc import AlcoCalc, Drinker
 from colorama import Fore
 from FunctionsBase import *
+
+import art
 import os, time
+
 os.system('cls')
 print(Fore.GREEN)
 
 def welcomemessage():
-    print("Welcome to AlcoPy\nIn this program you can calculate your blood alcohol level and intoxication level\n")
+    art.tprint("Welcome to AlcoPy", space=True, font="small")
+    print("\nIn this program you can calculate your blood alcohol level and intoxication level\n")
     work()
 
 def work():
@@ -15,7 +19,7 @@ def work():
     def userask():
         UserDict = {}
         UserDict = {a: None for a in Drinker.attributeList}
-        userask = ('enter weight', 'enter height', 'enter gender', 'enter age', 'enter fullness')
+        userask = ('Enter weight', 'Enter height', 'Enter gender', 'Enter age', 'Enter fullness')
         for a in Drinker.attributeList:
             i = Drinker.attributeList.index(a)
             UserDict[a] = input(f"{userask[i]}: ")
@@ -90,7 +94,7 @@ def work():
     def returntostart():
         print("\n\n\nDo you want to continue? (y/n)")
         check = input()
-        if check.lower == "y":
+        if check.lower() == "y":
             cls()
             work()
 

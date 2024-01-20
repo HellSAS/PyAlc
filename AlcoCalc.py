@@ -81,7 +81,7 @@ class AlcoCalc:
     def calculate_alcohol_effect(c) -> dict: 
         """! Рассчитывает уровень опьянения.
         @param c   Уровень алкоголя в крови [грамм.спирта/литр.крови].
-        @return  {"promiles": float, "intoxication_level": str, "time_to_sober_minutes": float, "can_drive": bool}
+        @return  {"promiles": float, "intoxication_level": str, "time_to_sober_hours": float, "can_drive": bool}
         """
         
         can_drive = True
