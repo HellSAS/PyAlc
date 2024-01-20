@@ -1,7 +1,6 @@
 from FunctionsBase import *
 from accessify import private, protected
 
-import os as _os
 
 """
 tpi = tryParseInt
@@ -82,7 +81,7 @@ class AlcoCalc:
     def calculate_alcohol_effect(c) -> dict: 
         """! Рассчитывает уровень опьянения.
         @param c   Уровень алкоголя в крови [грамм.спирта/литр.крови].
-        @return  Словарь с данными об уровне опьянения.
+        @return  {"promiles": float, "intoxication_level": str, "time_to_sober_minutes": float, "can_drive": bool}
         """
         
         can_drive = True

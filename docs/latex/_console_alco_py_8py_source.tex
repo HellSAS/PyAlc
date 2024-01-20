@@ -3,10 +3,10 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00001}00001\ \textcolor{keyword}{from}\ AlcoCalc\ \textcolor{keyword}{import}\ AlcoCalc,\ Drinker}
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00002}00002\ \textcolor{keyword}{from}\ colorama\ \textcolor{keyword}{import}\ Fore}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00003}00003\ \textcolor{keyword}{import}\ os}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00004}00004\ os.system(\textcolor{stringliteral}{'cls'})}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00005}00005\ print(Fore.GREEN)}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00003}00003\ \textcolor{keyword}{from}\ FunctionsBase\ \textcolor{keyword}{import}\ *}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00004}00004\ \textcolor{keyword}{import}\ os}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00005}00005\ os.system(\textcolor{stringliteral}{'cls'})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00006}00006\ print(Fore.GREEN)}
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00007}00007\ UserDict\ =\ \{\}}
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00008}00008\ }
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00009}00009\ UserDict\ =\ \{a:\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{for}\ a\ \textcolor{keywordflow}{in}\ Drinker.attributeList\}}
@@ -37,14 +37,14 @@
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00034}00034\ }
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00035}00035\ }
 \DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00036}00036\ }
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00037}00037\ c\ =\ AlcoCalc.сalculate\_alcohol\_by\_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00038}00038\ result\ =\ AlcoCalc.сalculate\_alcohol\_effect(c)}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00039}00039\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ result:}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00040}00040\ \ \ \ \ \textcolor{keywordflow}{if}\ i\ ==\ \textcolor{stringliteral}{"{}intoxication\_level"{}}:}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00041}00041\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i][1]\}"{}})}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}\_description:\ \{result[i][2]\}"{}})}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00043}00043\ \ \ \ \ \textcolor{keywordflow}{else}:}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00044}00044\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i]\}"{}})}
-\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00037}00037\ c\ =\ AlcoCalc.calculate\_alcohol\_by\_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00038}00038\ result\ =\ AlcoCalc.calculate\_alcohol\_effect(c)}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00039}00039\ cls()}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00040}00040\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ result:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00041}00041\ \ \ \ \ \textcolor{keywordflow}{if}\ i\ ==\ \textcolor{stringliteral}{"{}intoxication\_level"{}}:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i][1]\}"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00043}00043\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}\_description:\ \{result[i][2]\}"{}})}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_console_alco_py_8py_source_l00045}00045\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}\{i\}:\ \{result[i]\}"{}})}
 
 \end{DoxyCode}

@@ -80,8 +80,8 @@ $(function() { codefold.init(0); });
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">from</span> FunctionsBase <span class="keyword">import</span> *</div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> os </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">from</span> accessify <span class="keyword">import</span> private, protected</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="stringliteral">tpi = tryParseInt</span></div>
@@ -138,7 +138,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        23: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;sambuca&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        24: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;samagon&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.95},</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
 <div class="foldopen" id="foldopen00060" data-start="" data-end="">
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_alco_calc_1_1_alco_calc.html#a46bb6794b13c655e109f2b5d483e75bd">   60</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_alco_calc_1_1_alco_calc.html#a46bb6794b13c655e109f2b5d483e75bd">calculate_alcohol_by_volume</a>(drink_type, drink_amount, weight, height, gender, fullness) -&gt; float: </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="stringliteral">&quot;&quot;&quot;! Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови].</span></div>
@@ -163,10 +163,10 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 </div>
 <div class="foldopen" id="foldopen00081" data-start="" data-end="">
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_alco_calc_1_1_alco_calc.html#a201e5a4be20a2650c3836dac6271351b">   81</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_alco_calc_1_1_alco_calc.html#a201e5a4be20a2650c3836dac6271351b">сalculate_alcohol_effect</a>(c) -&gt; dict: </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_alco_calc_1_1_alco_calc.html#a1ee3c8e44012f599cbeccff871fd49bf">   81</a></span>    <span class="keyword">def </span><a class="code hl_function" href="class_alco_calc_1_1_alco_calc.html#a1ee3c8e44012f599cbeccff871fd49bf">calculate_alcohol_effect</a>(c) -&gt; dict: </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="stringliteral">&quot;&quot;&quot;! Рассчитывает уровень опьянения.</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="stringliteral">        @param c   Уровень алкоголя в крови [грамм.спирта/литр.крови].</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="stringliteral">        @return  Словарь с данными об уровне опьянения.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="stringliteral">        @return  {&quot;promiles&quot;: float, &quot;intoxication_level&quot;: str, &quot;time_to_sober_minutes&quot;: float, &quot;can_drive&quot;: bool}</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        can_drive = <span class="keyword">True</span></div>
@@ -229,7 +229,7 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 <div class="ttc" id="aclass_alco_calc_1_1_alco_calc_html"><div class="ttname"><a href="class_alco_calc_1_1_alco_calc.html">AlcoCalc.AlcoCalc</a></div><div class="ttdef"><b>Definition</b> <a href="#l00016">AlcoCalc.py:16</a></div></div>
-<div class="ttc" id="aclass_alco_calc_1_1_alco_calc_html_a201e5a4be20a2650c3836dac6271351b"><div class="ttname"><a href="class_alco_calc_1_1_alco_calc.html#a201e5a4be20a2650c3836dac6271351b">AlcoCalc.AlcoCalc.сalculate_alcohol_effect</a></div><div class="ttdeci">dict сalculate_alcohol_effect(c)</div><div class="ttdoc">Рассчитывает уровень опьянения.</div><div class="ttdef"><b>Definition</b> <a href="#l00081">AlcoCalc.py:81</a></div></div>
+<div class="ttc" id="aclass_alco_calc_1_1_alco_calc_html_a1ee3c8e44012f599cbeccff871fd49bf"><div class="ttname"><a href="class_alco_calc_1_1_alco_calc.html#a1ee3c8e44012f599cbeccff871fd49bf">AlcoCalc.AlcoCalc.calculate_alcohol_effect</a></div><div class="ttdeci">dict calculate_alcohol_effect(c)</div><div class="ttdoc">Рассчитывает уровень опьянения.</div><div class="ttdef"><b>Definition</b> <a href="#l00081">AlcoCalc.py:81</a></div></div>
 <div class="ttc" id="aclass_alco_calc_1_1_alco_calc_html_a46bb6794b13c655e109f2b5d483e75bd"><div class="ttname"><a href="class_alco_calc_1_1_alco_calc.html#a46bb6794b13c655e109f2b5d483e75bd">AlcoCalc.AlcoCalc.calculate_alcohol_by_volume</a></div><div class="ttdeci">float calculate_alcohol_by_volume(drink_type, drink_amount, weight, height, gender, fullness)</div><div class="ttdoc">Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови].</div><div class="ttdef"><b>Definition</b> <a href="#l00060">AlcoCalc.py:60</a></div></div>
 <div class="ttc" id="aclass_alco_calc_1_1_drinker_html"><div class="ttname"><a href="class_alco_calc_1_1_drinker.html">AlcoCalc.Drinker</a></div><div class="ttdef"><b>Definition</b> <a href="#l00103">AlcoCalc.py:103</a></div></div>
 <div class="ttc" id="aclass_alco_calc_1_1_drinker_html_a528a9bcf0ee8c2a0af03f6f92b21a8bf"><div class="ttname"><a href="class_alco_calc_1_1_drinker.html#a528a9bcf0ee8c2a0af03f6f92b21a8bf">AlcoCalc.Drinker.weight</a></div><div class="ttdeci">weight</div><div class="ttdef"><b>Definition</b> <a href="#l00122">AlcoCalc.py:122</a></div></div>

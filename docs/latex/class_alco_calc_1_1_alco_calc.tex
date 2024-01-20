@@ -5,7 +5,7 @@
 \item 
 float \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}{calculate\+\_\+alcohol\+\_\+by\+\_\+volume}} (drink\+\_\+type, drink\+\_\+amount, weight, height, gender, fullness)
 \begin{DoxyCompactList}\small\item\em Рассчитывает уровень алкоголя в крови \mbox{[}грамм спирта/литр крови\mbox{]}. \end{DoxyCompactList}\item 
-dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a201e5a4be20a2650c3836dac6271351b}{сalculate\+\_\+alcohol\+\_\+effect}} (c)
+dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}{calculate\+\_\+alcohol\+\_\+effect}} (c)
 \begin{DoxyCompactList}\small\item\em Рассчитывает уровень опьянения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
@@ -16,25 +16,14 @@ dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc
 \begin{DoxyCompactList}\small\item\em Словарь с данными о типах напитков. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00016}{16}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
+
+
+
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_alco_calc_1_1_alco_calc_a201e5a4be20a2650c3836dac6271351b}\label{class_alco_calc_1_1_alco_calc_a201e5a4be20a2650c3836dac6271351b} 
-\index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!сalculate\_alcohol\_effect@{сalculate\_alcohol\_effect}}
-\index{сalculate\_alcohol\_effect@{сalculate\_alcohol\_effect}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
-\doxysubsubsection{\texorpdfstring{сalculate\_alcohol\_effect()}{сalculate\_alcohol\_effect()}}
-{\footnotesize\ttfamily  dict Alco\+Calc.\+Alco\+Calc.\+сalculate\+\_\+alcohol\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
-
-
-
-Рассчитывает уровень опьянения. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em c} & Уровень алкоголя в крови \mbox{[}грамм.\+спирта/литр.крови\mbox{]}. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Словарь с данными об уровне опьянения. 
-\end{DoxyReturn}
 \Hypertarget{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}\label{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd} 
 \index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!calculate\_alcohol\_by\_volume@{calculate\_alcohol\_by\_volume}}
 \index{calculate\_alcohol\_by\_volume@{calculate\_alcohol\_by\_volume}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
@@ -63,6 +52,32 @@ dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc
 \begin{DoxyReturn}{Returns}
 \mbox{[}грамм.\+спирта/литр.крови\mbox{]}. 
 \end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00060}{60}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
+
+\Hypertarget{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}\label{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf} 
+\index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!calculate\_alcohol\_effect@{calculate\_alcohol\_effect}}
+\index{calculate\_alcohol\_effect@{calculate\_alcohol\_effect}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
+\doxysubsubsection{\texorpdfstring{calculate\_alcohol\_effect()}{calculate\_alcohol\_effect()}}
+{\footnotesize\ttfamily  dict Alco\+Calc.\+Alco\+Calc.\+calculate\+\_\+alcohol\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Рассчитывает уровень опьянения. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Уровень алкоголя в крови \mbox{[}грамм.\+спирта/литр.крови\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{"{}promiles"{}\+: float, "{}intoxication\+\_\+level"{}\+: str, "{}time\+\_\+to\+\_\+sober\+\_\+minutes"{}\+: float, "{}can\+\_\+drive"{}\+: bool\} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00081}{81}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -107,6 +122,10 @@ dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc
 
 Словарь с данными о типах напитков. 
 
+
+
+Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00032}{32}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
+
 \Hypertarget{class_alco_calc_1_1_alco_calc_a069cdc977e256c7377a6a9e9fdfc6d60}\label{class_alco_calc_1_1_alco_calc_a069cdc977e256c7377a6a9e9fdfc6d60} 
 \index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!intoxication\_levels@{intoxication\_levels}}
 \index{intoxication\_levels@{intoxication\_levels}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
@@ -130,6 +149,10 @@ dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc
 
 
 Словарь с данными об уровнях опьянения. 
+
+
+
+Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00020}{20}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
 
 
 

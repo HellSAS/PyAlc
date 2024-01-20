@@ -2,8 +2,8 @@
 \hypertarget{_alco_calc_8py_source}{}\label{_alco_calc_8py_source}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00001}00001\ \textcolor{keyword}{from}\ FunctionsBase\ \textcolor{keyword}{import}\ *}
-\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00002}00002\ }
-\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00003}00003\ \textcolor{keyword}{import}\ os\ }
+\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00002}00002\ \textcolor{keyword}{from}\ accessify\ \textcolor{keyword}{import}\ private,\ protected}
+\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00003}00003\ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00004}00004\ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00005}00005\ \textcolor{stringliteral}{"{}"{}"{}}}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00006}00006\ \textcolor{stringliteral}{tpi\ =\ tryParseInt}}
@@ -59,7 +59,7 @@
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00056}00056\ \ \ \ \ \ \ \ \ 23:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}sambuca"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ 24:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}samagon"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.95\},}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00058}00058\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00059}00059\ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00060}\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}{00060}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}{calculate\_alcohol\_by\_volume}}(drink\_type,\ drink\_amount,\ weight,\ height,\ gender,\ fullness)\ -\/>\ float:\ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}!\ Рассчитывает\ уровень\ алкоголя\ в\ крови\ [грамм\ спирта/литр\ крови].}}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00062}00062\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ drink\_type\ \ \ Тип\ напитка.}}
@@ -81,10 +81,10 @@
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00078}00078\ \ \ \ \ \ \ \ \ result\ =\ bac}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ result}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00080}00080\ }
-\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00081}\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a201e5a4be20a2650c3836dac6271351b}{00081}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a201e5a4be20a2650c3836dac6271351b}{сalculate\_alcohol\_effect}}(c)\ -\/>\ dict:\ }
+\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00081}\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}{00081}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}{calculate\_alcohol\_effect}}(c)\ -\/>\ dict:\ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}!\ Рассчитывает\ уровень\ опьянения.}}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00083}00083\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @param\ c\ \ \ Уровень\ алкоголя\ в\ крови\ [грамм.спирта/литр.крови].}}
-\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00084}00084\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ \ Словарь\ с\ данными\ об\ уровне\ опьянения.}}
+\DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00084}00084\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ @return\ \ \{"{}promiles"{}:\ float,\ "{}intoxication\_level"{}:\ str,\ "{}time\_to\_sober\_minutes"{}:\ float,\ "{}can\_drive"{}:\ bool\}}}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00085}00085\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}"{}"{}}}
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00086}00086\ \ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\Hypertarget{_alco_calc_8py_source_l00087}00087\ \ \ \ \ \ \ \ \ can\_drive\ =\ \textcolor{keyword}{True}}

@@ -81,10 +81,10 @@ $(function() { codefold.init(0); });
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">from</span> AlcoCalc <span class="keyword">import</span> AlcoCalc, Drinker</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">from</span> colorama <span class="keyword">import</span> Fore</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">import</span> os</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>os.system(<span class="stringliteral">&#39;cls&#39;</span>)</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>print(Fore.GREEN)</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">from</span> FunctionsBase <span class="keyword">import</span> *</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">import</span> os</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>os.system(<span class="stringliteral">&#39;cls&#39;</span>)</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>print(Fore.GREEN)</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>UserDict = {}</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>UserDict = {a: <span class="keywordtype">None</span> <span class="keywordflow">for</span> a <span class="keywordflow">in</span> Drinker.attributeList}</div>
@@ -115,15 +115,15 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>c = AlcoCalc.сalculate_alcohol_by_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>result = AlcoCalc.сalculate_alcohol_effect(c)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordflow">for</span> i <span class="keywordflow">in</span> result:</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">if</span> i == <span class="stringliteral">&quot;intoxication_level&quot;</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        print(f<span class="stringliteral">&quot;{i}: {result[i][1]}&quot;</span>)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        print(f<span class="stringliteral">&quot;{i}_description: {result[i][2]}&quot;</span>)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">else</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        print(f<span class="stringliteral">&quot;{i}: {result[i]}&quot;</span>)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>c = AlcoCalc.calculate_alcohol_by_volume(drinktype,amount,User.weight,User.height,User.gender,User.fullness)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>result = AlcoCalc.calculate_alcohol_effect(c)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>cls()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keywordflow">for</span> i <span class="keywordflow">in</span> result:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> i == <span class="stringliteral">&quot;intoxication_level&quot;</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        print(f<span class="stringliteral">&quot;{i}: {result[i][1]}&quot;</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        print(f<span class="stringliteral">&quot;{i}_description: {result[i][2]}&quot;</span>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">else</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        print(f<span class="stringliteral">&quot;{i}: {result[i]}&quot;</span>)</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
