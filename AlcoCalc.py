@@ -34,7 +34,7 @@ class AlcoCalc:
         1: {"name": "beer", "alcohol_content": 0.05},
         2: {"name": "wine", "alcohol_content": 0.12},
         3: {"name": "whiskey", "alcohol_content": 0.4},
-        4: {"name": "kvass", "alcohol_content": 0.02},
+        4: {"name": "kvass", "alcohol_content": 0.002},
         5: {"name": "vodka", "alcohol_content": 0.4},
         6: {"name": "champagne", "alcohol_content": 0.12},
         7: {"name": "cognac", "alcohol_content": 0.4},
