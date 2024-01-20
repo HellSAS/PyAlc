@@ -98,7 +98,7 @@ class AlcoCalc:
                 can_drive = False
         time_to_sober_hours = c/0.15 # 0.15грамм/ч - среднее время выведения алкоголя из организма
 
-        result = {"promiles": c, "intoxication_level": intoxication_level, "time_to_sober_minutes": time_to_sober_hours, "can_drive": can_drive}
+        result = {"promiles": c, "intoxication_level": intoxication_level, "time_to_sober_hours": time_to_sober_hours, "can_drive": can_drive}
         return result
 class Drinker:
     attributeList = ["weight", "height", "gender", "age", "fullness"]
