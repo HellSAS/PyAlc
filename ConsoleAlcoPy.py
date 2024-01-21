@@ -71,7 +71,7 @@ def work():
             print(Fore.BLUE + f"write the amount of alcohol in the drink:{Fore.CYAN}\nwrite in the format x(%) - number of percents:\n\n" + Style.RESET_ALL)
             alcohol_content = float(input())
         except:
-            print(Fore.RED + "Wrong drink type, enter drink type again:" + Style.RESET_ALL)
+            print(Fore.RED + "Wrong alcohol content, enter alcohol content again:" + Style.RESET_ALL)
             askdrinktype1()
         global amount
         def askdrinktype2():
