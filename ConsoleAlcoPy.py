@@ -68,7 +68,7 @@ def work():
             except:
                 askdrinktype1()
         try:
-            print(Fore.BLUE + "write the amount of alcohol in the drink:\nin the format 0.(%) - number of percents:\n\n" + Style.RESET_ALL)
+            print(Fore.BLUE + f"write the amount of alcohol in the drink:{Fore.CYAN}\nwrite in the format x(%) - number of percents:\n\n" + Style.RESET_ALL)
             alcohol_content = float(input())
         except:
             print(Fore.RED + "Wrong drink type, enter drink type again:" + Style.RESET_ALL)
