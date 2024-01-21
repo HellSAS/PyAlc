@@ -99,7 +99,7 @@ class AlcoCalc:
                 intoxication_level = AlcoCalc.intoxication_levels[i]
                 break
             else:
-                intoxication_level = AlcoCalc.intoxication_levels["смертельное отравление"]
+                intoxication_level = AlcoCalc.intoxication_levels["высокий риск смерти"]
                 can_drive = False
         time_to_sober_hours = c/0.15 # 0.15грамм/ч - среднее время выведения алкоголя из организма
 
