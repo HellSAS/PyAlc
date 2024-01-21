@@ -69,6 +69,8 @@ class AlcoCalc:
         @param fullness   Уровень сытости человека.
         @return  [грамм.спирта/литр.крови].
         """
+        if alcohol_content > 1:
+            alcohol_content = alcohol_content/100
         if alcohol_content < 0:
             alcohol_content = -alcohol_content
         if drink_amount > 9999:
