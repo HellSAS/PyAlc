@@ -99,9 +99,9 @@ def work():
         for i in result:
             if i == "intoxication_level":
                 print(f"{Fore.BLUE}{i}{Style.RESET_ALL}: {Fore.RED}{result[i][1].replace('*', Fore.RED + '*' + Style.RESET_ALL)}{Style.RESET_ALL}")
-                print(f"{Fore.BLUE}{i}_description:{Style.RESET_ALL}{Fore.WHITE}{result[i][2].replace('*', Fore.RED + '*' + Style.RESET_ALL)}{Style.RESET_ALL}")
+                print(f"{Fore.BLUE}{i}_description:{Style.RESET_ALL}{result[i][2].replace('*', Fore.RED + '*' + Style.RESET_ALL)}{Style.RESET_ALL}")
             else:
-                print(f"{Fore.BLUE}{i}:{Style.RESET_ALL} {Fore.WHITE}{result[i]}{Style.RESET_ALL}" if isinstance(result[i], str) else f"{Fore.BLUE}{i}: {Fore.WHITE}{result[i]}{Style.RESET_ALL}")
+                print(f"{Fore.BLUE}{i}:{Style.RESET_ALL} {result[i]}{Style.RESET_ALL}" if isinstance(result[i], str) else f"{Fore.BLUE}{i}: {Fore.WHITE}{result[i]}{Style.RESET_ALL}")
         time.sleep(5)
 
 
