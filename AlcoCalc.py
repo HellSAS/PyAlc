@@ -18,16 +18,13 @@ class AlcoCalc:
 
     ## Словарь с данными об уровнях опьянения.
     intoxication_levels = {
-        
-        
-        "трезвый": [0.2, "трезвый", "Трезвый"], 
-        "частично пьян": [0.59, "частично пьян", "\nПоведение:\n*Средневыраженная\n*эйфория\n*РасслаблениеОщущение\n*радости\n*Говорливость\n*Понижение\n*сдержанности\n" + "Нарушения:\n*Концентрация"],
-        "легкая степень опьянения": [0.9, "легкая степень опьянения", "\nПоведение:\n*Притупление ощущения\n*Расторможенность\n*Экстравертность\n" + "Нарушения:\n*Рассуждение\n*Глубина восприятия\n*Периферическое зрение\n*Приспособление зрачка к свету"],
-        "средняя степень опьянения": [1.9, "средняя степень опьянения","\nПоведение:\n*Сверх-экспрессивность\n*Переменчивость эмоций\n*Гнев или печаль\n*Неистовость\n*Снижение либидо\n" + "Нарушения:\n*Рефлексы\n*Время реакции\n*Основные моторные навыки\n*Способность к контролю движения (появляется шатающаяся походка)\n*Нечленораздельная речь\n*Эрекция (у мужчин, временно)\n*Вероятность временного алкогольного отравления"],
-        "тяжёлое степень опьянения": [2.9, "тяжёлое степень опьянения", "\nПоведение:\n*Ступор\n*Потеря способности к пониманию\n*Ослабление способностей к ощущению\n" +"Нарушения:\n*Вероятность потери сознания\n*Тяжелое нарушение моторики\n*Потеря памяти"],
-        "крайне тяжелое отравление": [5.0, "крайне тяжелое отравление", "\nПоведение:\n*Полная утрата контроля за поведением\n*Потеря сознания\n*Вероятность смерти\n" + "Нарушения:\n*Дыхание\n*Сердцебиение\n*Контроль над движением зрачков (Нистагм)"],
-        "высокий риск смерти": [float("inf"), "высокий риск смерти", "\nПоведение:\n*кома\n"+"Нарушения:\n*отказ всех органов чувств"],
-
+        "sober": [0.2, "sober", "Sober"],
+        "slightly drunk": [0.59, "slightly drunk", "\nBehavior:\n*Moderate euphoria\n*Relaxation\n*Feeling of joy\n*Talkativeness\n*Decreased inhibition\n" + "Impairments:\n*Concentration"],
+        "mild intoxication": [0.9, "mild intoxication", "\nBehavior:\n*Sensory dulling\n*Extraversion\n" + "Impairments:\n*Reasoning\n*Depth perception\n*Peripheral vision\n*Pupil adaptation to light"],
+        "moderate intoxication": [1.9, "moderate intoxication", "\nBehavior:\n*Hyper-expressiveness\n*Emotional variability\n*Anger or sadness\n*Aggression\n*Decreased libido\n" + "Impairments:\n*Reflexes\n*Reaction time\n*Basic motor skills\n*Ability to control movement (staggering gait)\n*Slurred speech\n*Erection (temporary, in males)\n*Increased risk of alcohol poisoning"],
+        "severe intoxication": [2.9, "severe intoxication", "\nBehavior:\n*Stupor\n*Loss of comprehension\n*Diminished sensory abilities\n" + "Impairments:\n*Likelihood of loss of consciousness\n*Severe motor impairment\n*Memory loss"],
+        "extremely severe poisoning": [5.0, "extremely severe poisoning", "\nBehavior:\n*Complete loss of behavioral control\n*Loss of consciousness\n*Risk of death\n" + "Impairments:\n*Breathing\n*Heart rate\n*Control of eye movements (Nystagmus)"],
+        "high risk of death": [float("inf"), "high risk of death", "\nBehavior:\n*Coma\n" + "Impairments:\n*Failure of all sensory organs"],
     }
 
     ## Словарь с данными о типах напитков.
@@ -99,7 +96,7 @@ class AlcoCalc:
                 intoxication_level = AlcoCalc.intoxication_levels[i]
                 break
             else:
-                intoxication_level = AlcoCalc.intoxication_levels["высокий риск смерти"]
+                intoxication_level = AlcoCalc.intoxication_levels["high risk of deathи"]
                 can_drive = False
         time_to_sober_hours = c/0.15 # 0.15грамм/ч - среднее время выведения алкоголя из организма
 

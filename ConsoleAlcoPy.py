@@ -32,7 +32,7 @@ def work():
             UserDict[a] = input(f"{userask[i]}: ")
         global User
         User = Drinker(**UserDict)
-        print("\n" + str(User) + "\n\n\n")
+        print(Fore.GREEN+"\n" + str(User) + "\n\n\n")
 
     def askdrinktype():
         """print(Fore.BLUE + "Choose drink type:\n" + Style.RESET_ALL)
