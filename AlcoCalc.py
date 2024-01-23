@@ -88,7 +88,7 @@ class AlcoCalc:
         
         can_drive = True
         
-        if c > AlcoCalc.intoxication_levels["трезвый"][0]:
+        if c > AlcoCalc.intoxication_levels["sober"][0]:
                 can_drive = False
                 
         for i in AlcoCalc.intoxication_levels:
