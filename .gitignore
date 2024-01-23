@@ -1,2 +1,6 @@
 testpy.py
-__pycache__
+*.pyc
+AlcoPy\__pycache__
+AlcoPy\__pycache__\
+AlcoPy\__pycache__\*
+AlcoPy\__pycache__\*.pyc

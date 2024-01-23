@@ -2,17 +2,22 @@ from AlcoCalc import AlcoCalc, Drinker
 from colorama import Fore, Style
 from FunctionsBase import *
 
-import art
+import color_art as art
 import os, time
-w = ""
-os.system('cls')
+import sys
+
+
+cls()
 print(Fore.GREEN)
+
+w = ""
 color = (Fore.YELLOW, Fore.GREEN, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.RED)
-text_start = "Welcome to AlcoPy"
+text_start = f"Welcome     to     AlcoPy"
 #space=True, font="small"
 
+    
 def welcomemessage():
-    print(*[colors + art.text2art(char, font='small') for char, colors in zip(text_start, color)], sep="", end = ' ')
+    art.tprint(text_start, colors = color)
 
     print(Fore.GREEN +"\nIn this program you can calculate your blood alcohol level and intoxication level\n")
     work()

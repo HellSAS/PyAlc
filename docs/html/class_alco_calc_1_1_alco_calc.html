@@ -85,9 +85,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a46bb6794b13c655e109f2b5d483e75bd" id="r_a46bb6794b13c655e109f2b5d483e75bd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46bb6794b13c655e109f2b5d483e75bd">calculate_alcohol_by_volume</a> (drink_type, drink_amount, weight, height, gender, fullness)</td></tr>
-<tr class="memdesc:a46bb6794b13c655e109f2b5d483e75bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови].  <br /></td></tr>
-<tr class="separator:a46bb6794b13c655e109f2b5d483e75bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9806210632448f93d2c01bb92803d559" id="r_a9806210632448f93d2c01bb92803d559"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9806210632448f93d2c01bb92803d559">calculate_alcohol_by_volume</a> (alcohol_content, drink_amount, weight, height, gender, fullness)</td></tr>
+<tr class="memdesc:a9806210632448f93d2c01bb92803d559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Словарь с данными о типах напитков.  <br /></td></tr>
+<tr class="separator:a9806210632448f93d2c01bb92803d559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee3c8e44012f599cbeccff871fd49bf" id="r_a1ee3c8e44012f599cbeccff871fd49bf"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee3c8e44012f599cbeccff871fd49bf">calculate_alcohol_effect</a> (c)</td></tr>
 <tr class="memdesc:a1ee3c8e44012f599cbeccff871fd49bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рассчитывает уровень опьянения.  <br /></td></tr>
 <tr class="separator:a1ee3c8e44012f599cbeccff871fd49bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,16 +97,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a069cdc977e256c7377a6a9e9fdfc6d60" id="r_a069cdc977e256c7377a6a9e9fdfc6d60"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a069cdc977e256c7377a6a9e9fdfc6d60">intoxication_levels</a></td></tr>
 <tr class="memdesc:a069cdc977e256c7377a6a9e9fdfc6d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Словарь с данными об уровнях опьянения.  <br /></td></tr>
 <tr class="separator:a069cdc977e256c7377a6a9e9fdfc6d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ff62e948594aa8e08a989a7bc3056b" id="r_a54ff62e948594aa8e08a989a7bc3056b"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ff62e948594aa8e08a989a7bc3056b">drink_types</a></td></tr>
-<tr class="memdesc:a54ff62e948594aa8e08a989a7bc3056b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Словарь с данными о типах напитков.  <br /></td></tr>
-<tr class="separator:a54ff62e948594aa8e08a989a7bc3056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_alco_calc_8py_source.html#l00016">16</a> of file <a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a46bb6794b13c655e109f2b5d483e75bd" name="a46bb6794b13c655e109f2b5d483e75bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46bb6794b13c655e109f2b5d483e75bd">&#9670;&#160;</a></span>calculate_alcohol_by_volume()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9806210632448f93d2c01bb92803d559" name="a9806210632448f93d2c01bb92803d559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9806210632448f93d2c01bb92803d559">&#9670;&#160;</a></span>calculate_alcohol_by_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -114,7 +108,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"> float AlcoCalc.AlcoCalc.calculate_alcohol_by_volume </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>drink_type</em>, </span></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>alcohol_content</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -144,8 +138,8 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Словарь с данными о типах напитков. </p>
+<p>Рассчитывает уровень алкоголя в крови [грамм спирта/литр крови]. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">drink_type</td><td>Тип напитка. </td></tr>
     <tr><td class="paramname">drink_amount</td><td>Количество выпитого напитка (в миллилитрах). </td></tr>
@@ -157,8 +151,6 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[грамм.спирта/литр.крови]. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_alco_calc_8py_source.html#l00060">60</a> of file <a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a>.</p>
 
 </div>
 </div>
@@ -184,66 +176,11 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>{"promiles": float, "intoxication_level": str, "time_to_sober_minutes": float, "can_drive": bool} </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="_alco_calc_8py_source.html#l00081">81</a> of file <a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>{"promiles": float, "intoxication_level": str, "time_to_sober_hours": float, "can_drive": bool} </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a54ff62e948594aa8e08a989a7bc3056b" name="a54ff62e948594aa8e08a989a7bc3056b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54ff62e948594aa8e08a989a7bc3056b">&#9670;&#160;</a></span>drink_types</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">dict AlcoCalc.AlcoCalc.drink_types</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=  {</div>
-<div class="line">        </div>
-<div class="line">        1: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;beer&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.05},</div>
-<div class="line">        2: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;wine&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.12},</div>
-<div class="line">        3: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;whiskey&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        4: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;kvass&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.02},</div>
-<div class="line">        5: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;vodka&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        6: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;champagne&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.12},</div>
-<div class="line">        7: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;cognac&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        8: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;rum&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        9: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;gin&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        10: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;tequila&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        11: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;absinthe&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.7},</div>
-<div class="line">        12: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;sambuca&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        13: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;martini&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.15},</div>
-<div class="line">        14: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;vermouth&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.18},</div>
-<div class="line">        15: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;campari&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.25},</div>
-<div class="line">        16: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;jagermeister&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.35},</div>
-<div class="line">        17: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;absolut&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        18: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;jack daniels&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        19: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;jim beam&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        20: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;bacardi&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        21: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;malibu&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.21},</div>
-<div class="line">        22: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;baileys&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.17},</div>
-<div class="line">        23: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;sambuca&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.4},</div>
-<div class="line">        24: {<span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;samagon&quot;</span>, <span class="stringliteral">&quot;alcohol_content&quot;</span>: 0.95},</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
-<p>Словарь с данными о типах напитков. </p>
-
-<p class="definition">Definition at line <a class="el" href="_alco_calc_8py_source.html#l00032">32</a> of file <a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a>.</p>
-
-</div>
-</div>
 <a id="a069cdc977e256c7377a6a9e9fdfc6d60" name="a069cdc977e256c7377a6a9e9fdfc6d60"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a069cdc977e256c7377a6a9e9fdfc6d60">&#9670;&#160;</a></span>intoxication_levels</h2>
 
@@ -267,21 +204,21 @@ Static Public Attributes</h2></td></tr>
 <div class="line">        </div>
 <div class="line">        </div>
 <div class="line">        <span class="stringliteral">&quot;трезвый&quot;</span>: [0.2, <span class="stringliteral">&quot;трезвый&quot;</span>, <span class="stringliteral">&quot;Трезвый&quot;</span>], </div>
-<div class="line">        <span class="stringliteral">&quot;лёгкая степень опьянения&quot;</span>: [0.59, <span class="stringliteral">&quot;легкая степень опьянения&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Средневыраженная\n*эйфория\n*РасслаблениеОщущение\n*радости\n*Говорливость\n*Понижение\n*сдержанности\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Концентрация&quot;</span>],</div>
-<div class="line">        <span class="stringliteral">&quot;средняя степень опьянения&quot;</span>: [0.9, <span class="stringliteral">&quot;средняя степень опьянения&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Притупление ощущения\n*Расторможенность\n*Экстравертность\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Рассуждение\n*Глубина восприятия\n*Периферическое зрение\n*Приспособление зрачка к свету&quot;</span>],</div>
-<div class="line">        <span class="stringliteral">&quot;сильная степень опьянения&quot;</span>: [1.9, <span class="stringliteral">&quot;сильная степень опьянения&quot;</span>,<span class="stringliteral">&quot;\nПоведение:\n*Сверх-экспрессивность\n*Переменчивость эмоций\n*Гнев или печаль\n*Неистовость\n*Снижение либидо\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Рефлексы\n*Время реакции\n*Основные моторные навыки\n*Способность к контролю движения (появляется шатающаяся походка)\n*Нечленораздельная речь\n*Эрекция (у мужчин, временно)\n*Вероятность временного алкогольного отравления&quot;</span>],</div>
-<div class="line">        <span class="stringliteral">&quot;тяжёлое отравление&quot;</span>: [2.9, <span class="stringliteral">&quot;тяжёлое отравление&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Ступор\n*Потеря способности к пониманию\n*Ослабление способностей к ощущению\n&quot;</span> +<span class="stringliteral">&quot;Нарушения:\n*Вероятность потери сознания\n*Тяжелое нарушение моторики\n*Потеря памяти&quot;</span>],</div>
-<div class="line">        <span class="stringliteral">&quot;смертельное отравление&quot;</span>: [5.0, <span class="stringliteral">&quot;смертельное отравление&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Полная утрата контроля за поведением\n*Потеря сознания\n*Вероятность смерти\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Дыхание\n*Сердцебиение\n*Контроль над движением зрачков (Нистагм)&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;частично пьян&quot;</span>: [0.59, <span class="stringliteral">&quot;частично пьян&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Средневыраженная\n*эйфория\n*РасслаблениеОщущение\n*радости\n*Говорливость\n*Понижение\n*сдержанности\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Концентрация&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;легкая степень опьянения&quot;</span>: [0.9, <span class="stringliteral">&quot;легкая степень опьянения&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Притупление ощущения\n*Расторможенность\n*Экстравертность\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Рассуждение\n*Глубина восприятия\n*Периферическое зрение\n*Приспособление зрачка к свету&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;средняя степень опьянения&quot;</span>: [1.9, <span class="stringliteral">&quot;средняя степень опьянения&quot;</span>,<span class="stringliteral">&quot;\nПоведение:\n*Сверх-экспрессивность\n*Переменчивость эмоций\n*Гнев или печаль\n*Неистовость\n*Снижение либидо\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Рефлексы\n*Время реакции\n*Основные моторные навыки\n*Способность к контролю движения (появляется шатающаяся походка)\n*Нечленораздельная речь\n*Эрекция (у мужчин, временно)\n*Вероятность временного алкогольного отравления&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;тяжёлое степень опьянения&quot;</span>: [2.9, <span class="stringliteral">&quot;тяжёлое степень опьянения&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Ступор\n*Потеря способности к пониманию\n*Ослабление способностей к ощущению\n&quot;</span> +<span class="stringliteral">&quot;Нарушения:\n*Вероятность потери сознания\n*Тяжелое нарушение моторики\n*Потеря памяти&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;крайне тяжелое отравление&quot;</span>: [5.0, <span class="stringliteral">&quot;крайне тяжелое отравление&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*Полная утрата контроля за поведением\n*Потеря сознания\n*Вероятность смерти\n&quot;</span> + <span class="stringliteral">&quot;Нарушения:\n*Дыхание\n*Сердцебиение\n*Контроль над движением зрачков (Нистагм)&quot;</span>],</div>
+<div class="line">        <span class="stringliteral">&quot;высокий риск смерти&quot;</span>: [float(<span class="stringliteral">&quot;inf&quot;</span>), <span class="stringliteral">&quot;высокий риск смерти&quot;</span>, <span class="stringliteral">&quot;\nПоведение:\n*кома\n&quot;</span>+<span class="stringliteral">&quot;Нарушения:\n*отказ всех органов чувств&quot;</span>],</div>
+<div class="line"> </div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 <p>Словарь с данными об уровнях опьянения. </p>
 
-<p class="definition">Definition at line <a class="el" href="_alco_calc_8py_source.html#l00020">20</a> of file <a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Ponom/OneDrive/Desktop/AcloPy/<a class="el" href="_alco_calc_8py_source.html">AlcoCalc.py</a></li>
+<li>C:/Users/Ponom/OneDrive/Desktop/AcloPy/AlcoPy/<b>AlcoCalc.py</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
