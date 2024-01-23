@@ -3,38 +3,29 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}{calculate\+\_\+alcohol\+\_\+by\+\_\+volume}} (drink\+\_\+type, drink\+\_\+amount, weight, height, gender, fullness)
-\begin{DoxyCompactList}\small\item\em Рассчитывает уровень алкоголя в крови \mbox{[}грамм спирта/литр крови\mbox{]}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a9806210632448f93d2c01bb92803d559}{calculate\+\_\+alcohol\+\_\+by\+\_\+volume}} (alcohol\+\_\+content, drink\+\_\+amount, weight, height, gender, fullness)
+\begin{DoxyCompactList}\small\item\em Словарь с данными о типах напитков. \end{DoxyCompactList}\item 
 dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}{calculate\+\_\+alcohol\+\_\+effect}} (c)
 \begin{DoxyCompactList}\small\item\em Рассчитывает уровень опьянения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a069cdc977e256c7377a6a9e9fdfc6d60}{intoxication\+\_\+levels}}
-\begin{DoxyCompactList}\small\item\em Словарь с данными об уровнях опьянения. \end{DoxyCompactList}\item 
-dict \mbox{\hyperlink{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc3056b}{drink\+\_\+types}}
-\begin{DoxyCompactList}\small\item\em Словарь с данными о типах напитков. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\doxysubsection{Detailed Description}
-
-
-Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00016}{16}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
-
+\begin{DoxyCompactList}\small\item\em Словарь с данными об уровнях опьянения. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd}\label{class_alco_calc_1_1_alco_calc_a46bb6794b13c655e109f2b5d483e75bd} 
+\Hypertarget{class_alco_calc_1_1_alco_calc_a9806210632448f93d2c01bb92803d559}\label{class_alco_calc_1_1_alco_calc_a9806210632448f93d2c01bb92803d559} 
 \index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!calculate\_alcohol\_by\_volume@{calculate\_alcohol\_by\_volume}}
 \index{calculate\_alcohol\_by\_volume@{calculate\_alcohol\_by\_volume}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
 \doxysubsubsection{\texorpdfstring{calculate\_alcohol\_by\_volume()}{calculate\_alcohol\_by\_volume()}}
-{\footnotesize\ttfamily  float Alco\+Calc.\+Alco\+Calc.\+calculate\+\_\+alcohol\+\_\+by\+\_\+volume (\begin{DoxyParamCaption}\item[{}]{drink\+\_\+type,  }\item[{}]{drink\+\_\+amount,  }\item[{}]{weight,  }\item[{}]{height,  }\item[{}]{gender,  }\item[{}]{fullness }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  float Alco\+Calc.\+Alco\+Calc.\+calculate\+\_\+alcohol\+\_\+by\+\_\+volume (\begin{DoxyParamCaption}\item[{}]{alcohol\+\_\+content,  }\item[{}]{drink\+\_\+amount,  }\item[{}]{weight,  }\item[{}]{height,  }\item[{}]{gender,  }\item[{}]{fullness }\end{DoxyParamCaption})}
 
 
+
+Словарь с данными о типах напитков. 
 
 Рассчитывает уровень алкоголя в крови \mbox{[}грамм спирта/литр крови\mbox{]}. 
-
-
 \begin{DoxyParams}{Parameters}
 {\em drink\+\_\+type} & Тип напитка. \\
 \hline
@@ -52,10 +43,6 @@ Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00016}{16}} of file \
 \begin{DoxyReturn}{Returns}
 \mbox{[}грамм.\+спирта/литр.крови\mbox{]}. 
 \end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00060}{60}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
-
 \Hypertarget{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf}\label{class_alco_calc_1_1_alco_calc_a1ee3c8e44012f599cbeccff871fd49bf} 
 \index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!calculate\_alcohol\_effect@{calculate\_alcohol\_effect}}
 \index{calculate\_alcohol\_effect@{calculate\_alcohol\_effect}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
@@ -72,60 +59,11 @@ Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00060}{60}} of file \
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\{"{}promiles"{}\+: float, "{}intoxication\+\_\+level"{}\+: str, "{}time\+\_\+to\+\_\+sober\+\_\+minutes"{}\+: float, "{}can\+\_\+drive"{}\+: bool\} 
+\{"{}promiles"{}\+: float, "{}intoxication\+\_\+level"{}\+: str, "{}time\+\_\+to\+\_\+sober\+\_\+hours"{}\+: float, "{}can\+\_\+drive"{}\+: bool\} 
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00081}{81}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
-
-
-
 \doxysubsection{Member Data Documentation}
-\Hypertarget{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc3056b}\label{class_alco_calc_1_1_alco_calc_a54ff62e948594aa8e08a989a7bc3056b} 
-\index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!drink\_types@{drink\_types}}
-\index{drink\_types@{drink\_types}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
-\doxysubsubsection{\texorpdfstring{drink\_types}{drink\_types}}
-{\footnotesize\ttfamily dict Alco\+Calc.\+Alco\+Calc.\+drink\+\_\+types\hspace{0.3cm}{\ttfamily [static]}}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{=\ \ \{}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ }
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 1:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}beer"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.05\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 2:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}wine"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.12\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 3:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}whiskey"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 4:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}kvass"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.02\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 5:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}vodka"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 6:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}champagne"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.12\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 7:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}cognac"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 8:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}rum"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 9:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}gin"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 10:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}tequila"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 11:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}absinthe"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.7\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 12:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}sambuca"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 13:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}martini"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.15\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 14:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}vermouth"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.18\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 15:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}campari"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.25\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 16:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}jagermeister"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.35\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 17:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}absolut"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 18:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}jack\ daniels"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 19:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}jim\ beam"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 20:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}bacardi"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 21:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}malibu"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.21\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 22:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}baileys"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.17\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 23:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}sambuca"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.4\},}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ 24:\ \{\textcolor{stringliteral}{"{}name"{}}:\ \textcolor{stringliteral}{"{}samagon"{}},\ \textcolor{stringliteral}{"{}alcohol\_content"{}}:\ 0.95\},}
-\DoxyCodeLine{\ \ \ \ \}}
-
-\end{DoxyCode}
-
-
-Словарь с данными о типах напитков. 
-
-
-
-Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00032}{32}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
-
 \Hypertarget{class_alco_calc_1_1_alco_calc_a069cdc977e256c7377a6a9e9fdfc6d60}\label{class_alco_calc_1_1_alco_calc_a069cdc977e256c7377a6a9e9fdfc6d60} 
 \index{AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}!intoxication\_levels@{intoxication\_levels}}
 \index{intoxication\_levels@{intoxication\_levels}!AlcoCalc.AlcoCalc@{AlcoCalc.AlcoCalc}}
@@ -138,11 +76,13 @@ Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00032}{32}} of file \
 \DoxyCodeLine{\ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\ \ \ \ \ \ \ \ }
 \DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}трезвый"{}}:\ [0.2,\ \textcolor{stringliteral}{"{}трезвый"{}},\ \textcolor{stringliteral}{"{}Трезвый"{}}],\ }
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}лёгкая\ степень\ опьянения"{}}:\ [0.59,\ \textcolor{stringliteral}{"{}легкая\ степень\ опьянения"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Средневыраженная\(\backslash\)n*эйфория\(\backslash\)n*РасслаблениеОщущение\(\backslash\)n*радости\(\backslash\)n*Говорливость\(\backslash\)n*Понижение\(\backslash\)n*сдержанности\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Концентрация"{}}],}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}средняя\ степень\ опьянения"{}}:\ [0.9,\ \textcolor{stringliteral}{"{}средняя\ степень\ опьянения"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Притупление\ ощущения\(\backslash\)n*Расторможенность\(\backslash\)n*Экстравертность\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Рассуждение\(\backslash\)n*Глубина\ восприятия\(\backslash\)n*Периферическое\ зрение\(\backslash\)n*Приспособление\ зрачка\ к\ свету"{}}],}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}сильная\ степень\ опьянения"{}}:\ [1.9,\ \textcolor{stringliteral}{"{}сильная\ степень\ опьянения"{}},\textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Сверх-\/экспрессивность\(\backslash\)n*Переменчивость\ эмоций\(\backslash\)n*Гнев\ или\ печаль\(\backslash\)n*Неистовость\(\backslash\)n*Снижение\ либидо\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Рефлексы\(\backslash\)n*Время\ реакции\(\backslash\)n*Основные\ моторные\ навыки\(\backslash\)n*Способность\ к\ контролю\ движения\ (появляется\ шатающаяся\ походка)\(\backslash\)n*Нечленораздельная\ речь\(\backslash\)n*Эрекция\ (у\ мужчин,\ временно)\(\backslash\)n*Вероятность\ временного\ алкогольного\ отравления"{}}],}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}тяжёлое\ отравление"{}}:\ [2.9,\ \textcolor{stringliteral}{"{}тяжёлое\ отравление"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Ступор\(\backslash\)n*Потеря\ способности\ к\ пониманию\(\backslash\)n*Ослабление\ способностей\ к\ ощущению\(\backslash\)n"{}}\ +\textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Вероятность\ потери\ сознания\(\backslash\)n*Тяжелое\ нарушение\ моторики\(\backslash\)n*Потеря\ памяти"{}}],}
-\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}смертельное\ отравление"{}}:\ [5.0,\ \textcolor{stringliteral}{"{}смертельное\ отравление"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Полная\ утрата\ контроля\ за\ поведением\(\backslash\)n*Потеря\ сознания\(\backslash\)n*Вероятность\ смерти\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Дыхание\(\backslash\)n*Сердцебиение\(\backslash\)n*Контроль\ над\ движением\ зрачков\ (Нистагм)"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}частично\ пьян"{}}:\ [0.59,\ \textcolor{stringliteral}{"{}частично\ пьян"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Средневыраженная\(\backslash\)n*эйфория\(\backslash\)n*РасслаблениеОщущение\(\backslash\)n*радости\(\backslash\)n*Говорливость\(\backslash\)n*Понижение\(\backslash\)n*сдержанности\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Концентрация"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}легкая\ степень\ опьянения"{}}:\ [0.9,\ \textcolor{stringliteral}{"{}легкая\ степень\ опьянения"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Притупление\ ощущения\(\backslash\)n*Расторможенность\(\backslash\)n*Экстравертность\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Рассуждение\(\backslash\)n*Глубина\ восприятия\(\backslash\)n*Периферическое\ зрение\(\backslash\)n*Приспособление\ зрачка\ к\ свету"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}средняя\ степень\ опьянения"{}}:\ [1.9,\ \textcolor{stringliteral}{"{}средняя\ степень\ опьянения"{}},\textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Сверх-\/экспрессивность\(\backslash\)n*Переменчивость\ эмоций\(\backslash\)n*Гнев\ или\ печаль\(\backslash\)n*Неистовость\(\backslash\)n*Снижение\ либидо\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Рефлексы\(\backslash\)n*Время\ реакции\(\backslash\)n*Основные\ моторные\ навыки\(\backslash\)n*Способность\ к\ контролю\ движения\ (появляется\ шатающаяся\ походка)\(\backslash\)n*Нечленораздельная\ речь\(\backslash\)n*Эрекция\ (у\ мужчин,\ временно)\(\backslash\)n*Вероятность\ временного\ алкогольного\ отравления"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}тяжёлое\ степень\ опьянения"{}}:\ [2.9,\ \textcolor{stringliteral}{"{}тяжёлое\ степень\ опьянения"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Ступор\(\backslash\)n*Потеря\ способности\ к\ пониманию\(\backslash\)n*Ослабление\ способностей\ к\ ощущению\(\backslash\)n"{}}\ +\textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Вероятность\ потери\ сознания\(\backslash\)n*Тяжелое\ нарушение\ моторики\(\backslash\)n*Потеря\ памяти"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}крайне\ тяжелое\ отравление"{}}:\ [5.0,\ \textcolor{stringliteral}{"{}крайне\ тяжелое\ отравление"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*Полная\ утрата\ контроля\ за\ поведением\(\backslash\)n*Потеря\ сознания\(\backslash\)n*Вероятность\ смерти\(\backslash\)n"{}}\ +\ \textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*Дыхание\(\backslash\)n*Сердцебиение\(\backslash\)n*Контроль\ над\ движением\ зрачков\ (Нистагм)"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}высокий\ риск\ смерти"{}}:\ [float(\textcolor{stringliteral}{"{}inf"{}}),\ \textcolor{stringliteral}{"{}высокий\ риск\ смерти"{}},\ \textcolor{stringliteral}{"{}\(\backslash\)nПоведение:\(\backslash\)n*кома\(\backslash\)n"{}}+\textcolor{stringliteral}{"{}Нарушения:\(\backslash\)n*отказ\ всех\ органов\ чувств"{}}],}
+\DoxyCodeLine{}
 \DoxyCodeLine{\ \ \ \ \}}
 
 \end{DoxyCode}
@@ -152,10 +92,6 @@ Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00032}{32}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{_alco_calc_8py_source_l00020}{20}} of file \mbox{\hyperlink{_alco_calc_8py_source}{Alco\+Calc.\+py}}.
-
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Ponom/\+One\+Drive/\+Desktop/\+Aclo\+Py/Alco\+Calc.\+py\end{DoxyCompactItemize}
+C\+:/\+Users/\+Ponom/\+One\+Drive/\+Desktop/\+Aclo\+Py/\+Alco\+Py/Alco\+Calc.\+py\end{DoxyCompactItemize}

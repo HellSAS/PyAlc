@@ -1,7 +1,3 @@
-Функции:
+# INSTALLATION 
 
-Рассчёт_степени_опъянения(масса=65, рост=175, пол=male, возраст=18, сытость=true, крепкость_напитка, кол_напитка) 
-Возвращает: Массив {ABV:float, степень_опьянения:str}
-
-Рассчёт_по_напитку(масса=65, рост=175, пол=male, возраст=18, сытость=true, напиток, кол_напитка)
-Возвращает: Массив {ABV:float, степень_опьянения:str}
+Run libraries/install_custom_libs.py or copy libraries/color_art manually to the python site-packages path

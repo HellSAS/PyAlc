@@ -12,7 +12,7 @@ cfb = check_for_bool
 cfcs = check_for_custom_string
 
 """
-    
+     
 class AlcoCalc:
 
 
