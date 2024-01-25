@@ -3,13 +3,13 @@ import sys
 import shutil
 import os
 
-from ConMeassageBase import error, info, warning
+from ConMeassageBase import info, error, warning
 
 pythonLibPath = sys.executable.replace("\\python.exe", "\\Lib\\site-packages\\")
 print(pythonLibPath)
 
 
-source_path = "libraries\color_art"
+source_path = "PyAlc\libraries\color_art"
 destination_path = pythonLibPath + "\color_art"
 
 try:
