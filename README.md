@@ -6,7 +6,7 @@
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
 <a href="https://t.me/Testing1112Bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot"></a>
 <!--<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
-</div>
+</div> -->
 	
 ----------
 
@@ -14,20 +14,10 @@
    * [Overview](https://github.com/sepandhaghighi/art#overview)
    * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
    * [Usage](https://github.com/sepandhaghighi/art#usage)
-   		* [1-Line Art](https://github.com/sepandhaghighi/art#1-line-art)
-   		* [ASCII Text](https://github.com/sepandhaghighi/art#ascii-text)
-   		* [Decoration](https://github.com/sepandhaghighi/art#decoration)
-   		* [Font Modes](https://github.com/sepandhaghighi/art#font-modes)
-   		* [Typo-Tolerance](https://github.com/sepandhaghighi/art#typo-tolerance)
-   		* [Set Defaults](https://github.com/sepandhaghighi/art#set-defaults)
-   		* [Testing](https://github.com/sepandhaghighi/art#testing)
-   		* [CLI](https://github.com/sepandhaghighi/art#cli)
-   		* [Telegram Bot](https://github.com/sepandhaghighi/art#telegram-bot)
-   		* [Try ART in Your Browser](https://github.com/sepandhaghighi/art#try-art-in-your-browser)
-   		* [Screen Record](https://github.com/sepandhaghighi/art#screen-record)
+   		* [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
+   		* [Telegram Bot](https://t.me/Testing1112Bot)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
-   * [Reference](https://github.com/sepandhaghighi/art#reference)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
    * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
