@@ -5,11 +5,10 @@
 <br/>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3"></a>
 <a href="https://t.me/Testing1112Bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot-red.svg" alt="Telegram Bot"></a>
-<!--<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a>
-</div> -->
+<!--<a href="https://discord.com/invite/FAAyq3QJqP"><img src="https://img.shields.io/discord/897532566301724722.svg" alt="Discord Channel"></a> -->
+</div> 
 	
 ----------
-
 ## Table of contents					
    * [Overview](https://github.com/sepandhaghighi/art#overview)
    * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
