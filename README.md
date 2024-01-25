@@ -15,10 +15,10 @@
    * [Usage](https://github.com/sepandhaghighi/art#usage)
        * [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
    	   * [Telegram Bot](https://t.me/Testing1112Bot)
-   * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
-   * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
-   * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
-   * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
+   * [Issues & Bug Reports](https://github.com/HellSAS/PyAlc#issues--bug-reports)
+   * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
+   * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
+   <!--* [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE) -->
    <!--* [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support) -->
    <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
