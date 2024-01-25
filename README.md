@@ -11,7 +11,7 @@
 ----------
 ## Table of contents					
    * [Overview](https://github.com/HellSAS/PyAlc#overview)
-   * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
+   * [Installation](https://github.com/HellSAS/PyAlc/blob/master/INSTALL.md)
    * [Usage](https://github.com/sepandhaghighi/art#usage)
        * [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
    	   * [Telegram Bot](https://t.me/Testing1112Bot)
