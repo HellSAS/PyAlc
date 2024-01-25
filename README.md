@@ -14,25 +14,23 @@
    * [Overview](https://github.com/sepandhaghighi/art#overview)
    * [Installation](https://github.com/sepandhaghighi/art/blob/master/INSTALL.md)
    * [Usage](https://github.com/sepandhaghighi/art#usage)
-   		* [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
-   		* [Telegram Bot](https://t.me/Testing1112Bot)
+       * [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
+   	   * [Telegram Bot](https://t.me/Testing1112Bot)
    * [Issues & Bug Reports](https://github.com/sepandhaghighi/art#issues--bug-reports)
    * [Contribution](https://github.com/sepandhaghighi/art/blob/master/.github/CONTRIBUTING.md)
    * [Authors](https://github.com/sepandhaghighi/art/blob/master/AUTHORS.md)
    * [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE)
-   * [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support)
-   * [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)
+   <!--* [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support) -->
+   <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
 
 ## Overview	
-ASCII art is also known as "computer text art". It involves the smart placement of typed special characters or
-letters to make a visual shape that is spread over multiple lines of text.
-	
-ART is a Python lib for text converting to ASCII art fancy. ;-)
+The PyAlc library provides convenient tools for calculating blood alcohol levels. With this library, you can easily determine how much alcohol exposure may affect your condition and take appropriate action. The library supports various calculation methods and also provides a convenient interface for interacting with the console application and Telegram bot. Start using PyAlc today and remain a responsible drinker.
 
 
-
+<!--
 <table>
+	<!--
 	<tr align="center"> 
 		<td>Open Hub</td>
 		<td><a href="https://www.openhub.net/p/artlib"><img src="https://www.openhub.net/p/artlib/widgets/project_thin_badge.gif"></a></td>	
@@ -41,6 +39,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 		<td>PyPI Counter</td>
 		<td><a href="http://pepy.tech/project/art"><img src="http://pepy.tech/badge/art"></a></td>
 	</tr>
+	
 	<tr align="center">
 		<td>Github Stars</td>
 		<td><a href="https://github.com/sepandhaghighi/art"><img src="https://img.shields.io/github/stars/sepandhaghighi/art.svg?style=social&label=Stars"></a></td>
@@ -83,7 +82,7 @@ ART is a Python lib for text converting to ASCII art fancy. ;-)
 	</tr>
 </table>
 
-    
+    -->
 
 ## Usage
 
