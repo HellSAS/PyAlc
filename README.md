@@ -95,7 +95,7 @@ The PyAlc library provides convenient tools for calculating blood alcohol levels
 
 ### Telegram bot			
 
-Just send your text to one of these bots. 👇👇👇👇		
+Just send your message to this bot. 👇👇👇👇		
 
 <a href="https://t.me/Testing1112Bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot1-red.svg"></a>			
 
@@ -105,9 +105,8 @@ Just send your text to one of these bots. 👇👇👇👇
 
 1. Fill an issue and describe it. We'll check it ASAP!
     - Please complete the issue template
-2. Discord : [https://discord.com/invite/FAAyq3QJqP](https://discord.com/invite/FAAyq3QJqP)
-3. Website : [https://www.ascii-art.site](https://www.ascii-art.site)
-4. Email : [info@ascii-art.site](mailto:info@ascii-art.site "info@ascii-art.site")
+2. Discord : **@hellsas**
+3. Email : [thehellsas@gmail.com](mailto:thehellsas@gmail.com "thehellsas@gmail.com")
 
 
 ## Show your support
@@ -115,7 +114,7 @@ Just send your text to one of these bots. 👇👇👇👇
 <h3>Star this repo</h3>					
 
 Give a ⭐️ if this project helped you!
-
+<!--
 <h3>Donate to our project</h3>	
 
 If you do like our project and we hope that you do, can you please support us? Our project is not and is never going to be working for profit. We need the money just so we can continue doing what we do ;-) .			
@@ -139,7 +138,7 @@ If you do like our project and we hope that you do, can you please support us? O
 - Your company's logo can be featured on **Readme** and **Website**
 - Intended for medium-sized companies
 
-
+-->
 # INSTALLATION 
 
 1. Run libraries/install_custom_libs.py or copy libraries/color_art manually to the python site-packages path.
