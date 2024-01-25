@@ -1,6 +1,6 @@
-from AlcoCalc import AlcoCalc, Drinker
+from pyalc import AlcoCalc, Drinker
 from colorama import Fore, Style
-from FunctionsBase import *
+from _functions_base import *
 
 import color_art as art
 import os, time

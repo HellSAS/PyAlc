@@ -3,15 +3,17 @@ import sys
 import shutil
 import os
 
+from _con_meassage_base import info, error, warning
+
 pythonLibPath = sys.executable.replace("\\python.exe", "\\Lib\\site-packages\\")
 print(pythonLibPath)
 
 
-source_path = "libraries\color_art"
+source_path = "PyAlc\libraries\color_art"
 destination_path = pythonLibPath + "\color_art"
 
 try:
     shutil.copytree(source_path, destination_path)
-    print("Copy successful!")
+    info("Copy successful!")
 except Exception as e:
-    print("Copy failed:", str(e))
+    error(f"Copy failed:{e}")
