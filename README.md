@@ -87,7 +87,7 @@ The PyAlc library provides convenient tools for calculating blood alcohol levels
 
 <div align="center">
 
-<img src="https://github.com/sepandhaghighi/art/raw/master/otherfile/ART.gif">
+<img src="https://github.com/HellSAS/PyAlc/blob/work2/otherfile/ConsoleAlcoPyGif.gif">
 <p>Quick Start</p>
 
 </div>				
