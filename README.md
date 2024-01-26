@@ -13,6 +13,8 @@
    * [Disclaimer](https://github.com/HellSAS/PyAlc#disclaimer])		
    * [Overview](https://github.com/HellSAS/PyAlc#overview)
    * [Installation](https://github.com/HellSAS/PyAlc/blob/master/INSTALL.md)
+       * [PyAlc Module](https://github.com/HellSAS/PyAlc#pyalc_module)
+	   * [Console BAC Calculator](https://github.com/HellSAS/PyAlc#console_bac_calculator)
    * [Usage](https://github.com/HellSAS/PyAlc#usage)
        * [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
    	   * [Telegram Bot](https://t.me/Testing1112Bot)
@@ -164,6 +166,9 @@ If you do like our project and we hope that you do, can you please support us? O
 
 # INSTALLATION 
 
-1. Run libraries/install_custom_libs.py or copy libraries/color_art manually to the python site-packages path.
-2. Run install_pyalc.py, this script also work as update script for pyalc module.
+## PyAlc Module
+1. Run install_pyalc.py, this script also work as update script for pyalc module.
 
+## Console BAC Calculator
+1. Run libraries\install_custom_libs.py or copy libraries\color_art manually to the python site-packages path. 
+2. Launch \ConsoleAlcoPy\ConsoleAlcoPy.py
