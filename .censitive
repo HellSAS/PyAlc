@@ -1,0 +1,8 @@
+# Hide the following variables in .env files
+.env:.*_KEY,.*_token,.*_PassWord, 
+
+# Hide all passwords and api tokens in js and ts files
+*.{py}:apitoken,.*password
+
+# Hide Certificates and keys
+*.{pem,crt,key}:BEGIN CERTIFICATE,BEGIN (RSA )?PRIVATE KEY:END CERTIFICATE,END (RSA )?PRIVATE KEY
