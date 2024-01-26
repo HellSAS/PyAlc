@@ -129,7 +129,9 @@ Give a ⭐️ if this project helped you!
 [Food Effects on Absorption and Metabolisn of Alcohol](https://pubmed.ncbi.nlm.nih.gov/979272/)
 
 [The estimation of blood alcohol concentration : Widmark revisited](https://pubmed.ncbi.nlm.nih.gov/25868887/)
+
 [The calculation of blood ethanol concentrations in males and females](https://pubmed.ncbi.nlm.nih.gov/11197633/)
+
 [The effects of fatigue and alcohol on highway safety](https://rosap.ntl.bts.gov/view/dot/1285)
 
 
