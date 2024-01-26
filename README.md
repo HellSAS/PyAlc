@@ -128,7 +128,7 @@ Give a ⭐️ if this project helped you!
 ## Reference
 1. Studies:
 
-[Food Effects on Absorption and Metabolisn of Alcohol](https://pubmed.ncbi.nlm.nih.gov/979272/)
+[**Food Effects on Absorption and Metabolisn of Alcohol**](https://pubmed.ncbi.nlm.nih.gov/979272/)
 
 [The estimation of blood alcohol concentration : Widmark revisited](https://pubmed.ncbi.nlm.nih.gov/25868887/)
 
@@ -136,6 +136,8 @@ Give a ⭐️ if this project helped you!
 
 [The effects of fatigue and alcohol on highway safety](https://rosap.ntl.bts.gov/view/dot/1285)
 
+2. Repositories:
+    * The project structure is borrowed from here: [**art**](https://github.com/sepandhaghighi/art)
 
 
 <!--
@@ -167,8 +169,8 @@ If you do like our project and we hope that you do, can you please support us? O
 ## INSTALLATION 
 
 ## PyAlc Module
-1. Run install_pyalc.py, this script also work as update script for pyalc module.
+1. Run **install_pyalc.py**, this script also work as update script for pyalc module.
 
 ## Console BAC Calculator
-1. Run libraries\install_custom_libs.py or copy libraries\color_art manually to the python site-packages path. 
-2. Launch \ConsoleAlcoPy\ConsoleAlcoPy.py
+1. Run **\libraries\install_custom_libs.py** or copy **\libraries\color_art** manually to the python site-packages path. 
+2. Launch **\ConsoleAlcoPy\ConsoleAlcoPy.py**
