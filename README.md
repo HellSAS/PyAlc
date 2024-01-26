@@ -9,7 +9,8 @@
 </div> 
 	
 ----------
-## Table of contents					
+## Table of contents		
+   * [Disclaimer](https://github.com/HellSAS/PyAlc#disclaimer])		
    * [Overview](https://github.com/HellSAS/PyAlc#overview)
    * [Installation](https://github.com/HellSAS/PyAlc/blob/master/INSTALL.md)
    * [Usage](https://github.com/HellSAS/PyAlc#usage)
@@ -22,7 +23,14 @@
    <!--* [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support) -->
    <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
+   * [Reference](https://github.com/HellSAS/PyAlc#reference)
 
+## Disclaimer
+Attention! Calculations are carried out by you at your own peril and risk. The results of calculations cannot serve as evidence in court, be the basis for lawsuits or other claims, or be used as any evidence, as well as to challenge the results of laboratory determination of ethanol concentration in blood and urine.
+
+The creators and developers of this program do not bear any responsibility for attempts to apply the results of calculations in legal disputes and their consequences. Don't drink and drive!
+
+The calculator has an error.
 ## Overview	
 The PyAlc library provides convenient tools for calculating blood alcohol levels. With this library, you can easily determine how much alcohol exposure may affect your condition and take appropriate action. The library supports various calculation methods and also provides a convenient interface for interacting with the console application and Telegram bot. Start using PyAlc today and remain a responsible drinker.
 
@@ -114,6 +122,17 @@ Just send your message to this bot. 👇👇👇👇
 <h3>Star this repo</h3>					
 
 Give a ⭐️ if this project helped you!
+
+## Reference
+1. Studies:
+[Food Effects on Absorption and Metabolisn of Alcohol](https://pubmed.ncbi.nlm.nih.gov/979272/)
+
+[The estimation of blood alcohol concentration : Widmark revisited](https://pubmed.ncbi.nlm.nih.gov/25868887/)
+[The calculation of blood ethanol concentrations in males and females](https://pubmed.ncbi.nlm.nih.gov/11197633/)
+[The effects of fatigue and alcohol on highway safety](https://rosap.ntl.bts.gov/view/dot/1285)
+
+
+
 <!--
 <h3>Donate to our project</h3>	
 
@@ -139,6 +158,7 @@ If you do like our project and we hope that you do, can you please support us? O
 - Intended for medium-sized companies
 
 -->
+
 # INSTALLATION 
 
 1. Run libraries/install_custom_libs.py or copy libraries/color_art manually to the python site-packages path.
