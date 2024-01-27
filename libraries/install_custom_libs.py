@@ -3,7 +3,7 @@ import sys
 import shutil
 import os
 
-from _con_meassage_base import info, error, warning
+from _con_message_base import info, error, warning
 
 pythonLibPath = sys.executable.replace("\\python.exe", "\\Lib\\site-packages\\")
 print(pythonLibPath)

@@ -2,7 +2,7 @@ import psycopg2
 import json
 
 from colorama import Fore, Back, Style
-from _con_meassage_base import error, info, warning
+from _con_message_base import error, info, warning
 from db_config import host, user, password, db_name, port
 from time import sleep
 PATH_TO_SQL_FILE = "PyAlc/database/tables.sql"

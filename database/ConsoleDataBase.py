@@ -1,7 +1,7 @@
 import json
 import psycopg2
 
-from _con_meassage_base import error, info, warning
+from _con_message_base import error, info, warning
 from db_config import host, user, password, db_name, port
 
 """!!!НЕ РАБОТАЕТ, НЕ ТРОГАЙ!!!"""
