@@ -23,10 +23,7 @@
    <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
    * [Reference](https://github.com/HellSAS/PyAlc#reference)
-   </br>
-   </br>
-   </br>
-   </br>
+##
    * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
    * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
    * [License](https://github.com/HellSAS/PyAlc/blob/master/LICENSE)
