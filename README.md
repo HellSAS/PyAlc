@@ -12,20 +12,24 @@
 ## Table of contents		
    * [Disclaimer](https://github.com/HellSAS/PyAlc#disclaimer])		
    * [Overview](https://github.com/HellSAS/PyAlc#overview)
-   * [Installation](https://github.com/HellSAS/PyAlc/blob/master/INSTALL.md)
-       * [PyAlc Module](https://github.com/HellSAS/PyAlc#installation)
-	   * [Console BAC Calculator](https://github.com/HellSAS/PyAlc#installation)
    * [Usage](https://github.com/HellSAS/PyAlc#usage)
        * [Console BAC Calculator](https://github.com/HellSAS/PyAlc/tree/master/ConsoleAlcoPy)
    	   * [Telegram Bot](https://t.me/Testing1112Bot)
-   * [Issues & Bug Reports](https://github.com/HellSAS/PyAlc#issues--bug-reports)
-   * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
-   * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
-   <!--* [License](https://github.com/sepandhaghighi/art/blob/master/LICENSE) -->
-   <!--* [Show Your Support](https://github.com/sepandhaghighi/art#show-your-support) -->
+   * [Installation](https://github.com/HellSAS/PyAlc/blob/master/INSTALL.md)
+   	   * [PyAlc Module](https://github.com/HellSAS/PyAlc#installation)
+	   * [Console BAC Calculator](https://github.com/HellSAS/PyAlc#installation)
+   * [Issues & Bug Reports](https://github.com/HellSAS/PyAlc#issues--bug-reports) 
+   * [Show Your Support](https://github.com/HellSAS/PyAlc#show-your-support)
    <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
    * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
    * [Reference](https://github.com/HellSAS/PyAlc#reference)
+   </br>
+   </br>
+   </br>
+   </br>
+   * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
+   * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
+   * [License](https://github.com/HellSAS/PyAlc/blob/master/LICENSE)
 
 ## Disclaimer
 Attention! Calculations are carried out by you at your own peril and risk. The results of calculations cannot serve as evidence in court, be the basis for lawsuits or other claims, or be used as any evidence, as well as to challenge the results of laboratory determination of ethanol concentration in blood and urine.
@@ -109,7 +113,14 @@ Just send your message to this bot. 👇👇👇👇
 
 <a href="https://t.me/Testing1112Bot" target="__blank"><img src="https://img.shields.io/badge/Telegram-Bot1-red.svg"></a>			
 
+## INSTALLATION 
 
+## PyAlc Module
+1. Run **install_pyalc.py**, this script also work as update script for pyalc module.
+
+## Console BAC Calculator
+1. Run **\libraries\install_custom_libs.py** or copy **\libraries\color_art** manually to the python site-packages path. 
+2. Launch **\ConsoleAlcoPy\ConsoleAlcoPy.py**
 
 ## Issues & bug reports			
 
@@ -165,12 +176,3 @@ If you do like our project and we hope that you do, can you please support us? O
 - Intended for medium-sized companies
 
 -->
-
-## INSTALLATION 
-
-## PyAlc Module
-1. Run **install_pyalc.py**, this script also work as update script for pyalc module.
-
-## Console BAC Calculator
-1. Run **\libraries\install_custom_libs.py** or copy **\libraries\color_art** manually to the python site-packages path. 
-2. Launch **\ConsoleAlcoPy\ConsoleAlcoPy.py**
