@@ -24,7 +24,7 @@
    * [Reference](https://github.com/HellSAS/PyAlc#reference)
 ##
    * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
-   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
+   * [Code of Conduct](https://github.com/HellSAS/PyAlc/blob/develop/.github/CODE_OF_CONDUCT.md)
    * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
    * [License](https://github.com/HellSAS/PyAlc/blob/master/LICENSE)
 
