@@ -21,10 +21,10 @@
    * [Issues & Bug Reports](https://github.com/HellSAS/PyAlc#issues--bug-reports) 
    * [Show Your Support](https://github.com/HellSAS/PyAlc#show-your-support)
    <!--* [Changelog](https://github.com/sepandhaghighi/art/blob/master/CHANGELOG.md)-->
-   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
    * [Reference](https://github.com/HellSAS/PyAlc#reference)
 ##
    * [Contribution](https://github.com/HellSAS/PyAlc/blob/master/.github/CONTRIBUTING.md)
+   * [Code of Conduct](https://github.com/sepandhaghighi/art/blob/master/.github/CODE_OF_CONDUCT.md)
    * [Authors](https://github.com/HellSAS/PyAlc/blob/master/AUTHORS.md)
    * [License](https://github.com/HellSAS/PyAlc/blob/master/LICENSE)
 
