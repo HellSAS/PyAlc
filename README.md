@@ -123,7 +123,7 @@ Just send your message to this bot. 👇👇👇👇
 
 1. Fill an issue and describe it. We'll check it ASAP!
     - Please complete the issue template
-2. Discord : **@hellsas**
+2. Discord : **@utkabob**
 3. Email : [thehellsas@gmail.com](mailto:thehellsas@gmail.com "thehellsas@gmail.com")
 
 
